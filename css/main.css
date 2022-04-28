@@ -1,0 +1,121 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+}
+
+.img{
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+}
+
+
+.site{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 400px;
+    height: 520px;
+    /* background-image: url("../img/smartphone.png"); */
+    background-color: aqua;
+    background-size: auto;
+    background-repeat: no-repeat;
+    
+    
+}
+
+.site__title{
+    display: block;
+    margin: 0;
+    margin-bottom: 25px;
+    color: #fff;
+    
+}
+
+.site__img{
+    display: block;
+    margin: 0;
+    margin-bottom: 25px;
+    /* vertical-align: middle; */
+}
+
+.site__list{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    align-items: center;
+}
+
+.site__item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.site__sub-img{
+    margin-right: 30px;
+}
+
+.site__subtitle{
+    margin: 0;
+}
+
+.site__subtext{
+    margin: 0;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.site__input:checked + .site__label > .input__controller{
+    background-color: #008000;
+    /* transition: all 0.4s ease; */
+    /* > .input__controller */
+    
+}
+
+.site__input:checked ~ .site__label > .input__controller{
+    transform: translateX(20px);
+    /* transition: all 0.4s ease; */
+}
+
+
+
+.site__label{
+    margin-left: 40px;
+    padding: 2.5px;
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 30px;
+    transition: all 0.4s ease;
+    
+}
+
+.input__controller{
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    transition: all 0.4s ease;
+    
+}
